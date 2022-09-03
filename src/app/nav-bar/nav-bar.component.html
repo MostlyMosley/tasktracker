@@ -1,0 +1,18 @@
+<p>
+  <mat-toolbar color="primary">
+    <span>Task Tracker</span>
+    <span class="spacer"></span>
+    <button mat-icon-button class="account-circle-button" [matMenuTriggerFor]="menu">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <ng-container *ngFor="let menuBtn of getAccountDropdown()" [ngSwitch]="menuBtn.type">
+        <button class="navbar-menu-panel" mat-menu-item [routerLink]="menuBtn.route" *ngSwitchCase="'button'">
+          <mat-icon>{{menuBtn.icon}}</mat-icon>
+          <span>{{menuBtn.label}}</span>
+        </button>
+        <mat-divider *ngSwitchCase="'divider'"></mat-divider>
+      </ng-container>
+    </mat-menu>
+  </mat-toolbar>
+</p>

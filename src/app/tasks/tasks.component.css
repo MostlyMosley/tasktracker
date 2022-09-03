@@ -1,0 +1,15 @@
+
+.tasks-container {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px 10px;
+}
+
+.category-card {
+  min-width: 30vw;
+}

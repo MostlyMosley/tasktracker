@@ -1,0 +1,13 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+.navbar-menu-panel {
+  width: 175px!important;
+}
+
+.account-circle-button-icon {
+  font-size: 36px;
+  width: 36px;
+  height: 36px;
+}
